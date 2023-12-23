@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 
 import numeral from "numeral";
 import { Box, Button, Card, CardActions, CardContent, CardIcon, Spacer } from "react-neu";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import Label from "components/Label";
 import Value from "components/Value";

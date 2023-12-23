@@ -8,7 +8,7 @@ import Split from "components/Split";
 import RegisterNotice from "./components/RegisterNotice";
 import RegistrationButton from 'components/RegistrationButton';
 import styled from "styled-components";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 const Registration: React.FC = () => {
   const { account } = useWallet();

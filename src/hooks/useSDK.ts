@@ -1,7 +1,7 @@
 import { ProposalVotingPower } from "contexts/Governance/types";
 import { ethers } from "ethers";
 import { useCallback, useEffect, useState } from "react";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import Yam from "yam-sdk-dev";
 
 const useSDK = () => {

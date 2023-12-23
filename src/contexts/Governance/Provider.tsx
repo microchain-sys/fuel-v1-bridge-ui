@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import { Proposal, ProposalVotingPower } from "./types";
 import Context from "./Context";
 import useYam from "hooks/useYam";
@@ -15,7 +15,7 @@ import {
 
 const emptyDelegation = '0x0000000000000000000000000000000000000000';
 
-const Provider: React.FC = ({ children }) => {
+const Provider = ({ children }: { children: React.ReactNode }) => {
   const { account } = useWallet();
   const yam = useYam();
   const [confirmTxModalIsOpen, setConfirmTxModalIsOpen] = useState(false);

@@ -8,7 +8,7 @@ import Page from "components/Page";
 import PageHeader from "components/PageHeader";
 
 import styled from "styled-components";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import useTvl from "hooks/useTvl";
 

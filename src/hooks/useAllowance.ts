@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 
 import BigNumber from "bignumber.js";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import { provider } from "web3-core";
 
 import { getAllowance } from "utils";

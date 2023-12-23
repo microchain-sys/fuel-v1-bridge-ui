@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState, useMemo } from "react";
 import Countdown, { CountdownRenderProps } from "react-countdown";
 import { Box, Button, Card, CardContent, CardIcon, Modal, ModalTitle, ModalContent, ModalActions, Spacer } from "react-neu";
 import styled from "styled-components";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import Dial from "components/Dial";
 import Label from "components/Label";

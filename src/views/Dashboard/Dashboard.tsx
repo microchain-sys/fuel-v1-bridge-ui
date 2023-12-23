@@ -8,7 +8,7 @@ import PageHeader from "components/PageHeader";
 import Charts from "./components/Charts";
 import TopCards from "./components/TopCards";
 import AssetsList from "./components/AssetsList";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import LanguageSwitcher from "../../components/LangSwitcher";
 import { useTranslation } from 'react-i18next';
 import UnlockWalletModal from "components/UnlockWalletModal";

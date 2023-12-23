@@ -1,6 +1,6 @@
 import React, { useCallback, useState, useEffect, useMemo } from "react";
 import BigNumber from "bignumber.js";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import numeral from "numeral";
 import { Box, Button, Container, Modal, ModalContent, ModalProps, ModalTitle, Separator, Spacer } from "react-neu";
 import FancyValue from "components/FancyValue";

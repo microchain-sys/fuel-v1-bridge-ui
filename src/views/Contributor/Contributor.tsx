@@ -6,7 +6,7 @@ import Page from "components/Page";
 import PageHeader from "components/PageHeader";
 import Split from "components/Split";
 import styled from "styled-components";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import { contributors as contributorsObj } from "utils/misc";
 import { getContributorVestingData, claimContributorVestedTokens, getYam30D } from "yam-sdk/utils";
 import { useCallback } from "react";

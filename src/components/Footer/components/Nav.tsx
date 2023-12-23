@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import { contributors } from "utils/misc";
 
 import footers from 'constants/Footers.json';

@@ -8,7 +8,7 @@ import Split from "components/Split";
 
 // import useTreasury from "hooks/useTreasury";
 import { getDPIPrice, getWETHPrice, getYUSDPrice, getUMAPrice, getYamHousePrice } from "yam-sdk/utils";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 const Treasury: React.FC = () => {
   const { status } = useWallet();

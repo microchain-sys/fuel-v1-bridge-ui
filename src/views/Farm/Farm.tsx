@@ -14,7 +14,7 @@ import StakeCard from "./components/Stake";
 import PausedLPsNotice from "./components/PausedLPsNotice";
 import ResumedLPsNotice from "./components/ResumedLPsNotice";
 import HarvestLPsNoticeYAMYUSD from "./components/HarvestLPsNoticeYAMYUSD";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import FancyValue from "components/FancyValue";
 
 const FARMERS = [

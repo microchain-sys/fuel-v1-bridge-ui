@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useEffect } from "react";
 import { createTheme, ThemeProvider } from "react-neu";
 import { BrowserRouter as Router, Route, Switch, useLocation, Redirect, HashRouter } from "react-router-dom";
-import { UseWalletProvider } from "use-wallet";
+import { UseWalletProvider } from "hooks/useWallet";
 import { useTranslation } from 'react-i18next';
 
 import TopBar from "components/TopBar";
@@ -133,7 +133,7 @@ const App: React.FC = () => {
   );
 };
 
-const Providers: React.FC = ({ children }) => {
+const Providers = ({ children }: { children: React.ReactNode }) => {
   const [darkModeSetting] = useLocalStorage("darkMode", false);
   const { dark: darkTheme, light: lightTheme } = useMemo(() => {
     return createTheme({

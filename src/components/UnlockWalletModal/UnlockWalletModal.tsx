@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect } from "react";
 import { Box, Button, Modal, ModalActions, ModalContent, ModalProps, ModalTitle, Spacer } from "react-neu";
 import styled from "styled-components";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import metamaskLogo from "assets/metamask-fox.svg";
 import walletConnectLogo from "assets/wallet-connect.svg";

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Container, Spacer, Button } from "react-neu";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import Page from 'components/Page';
 import PageHeader from "components/PageHeader";
 import Box from 'components/BoxWithDisplay';

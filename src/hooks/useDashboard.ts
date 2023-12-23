@@ -1,6 +1,6 @@
 import useTreasury from "hooks/useTreasury";
 import useYam from "hooks/useYam";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import { useCallback, useEffect, useState } from "react";
 import { useTheme } from "react-neu";

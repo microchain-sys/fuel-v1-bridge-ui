@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 import useYam from "hooks/useYam";
 import useGovernance from "hooks/useGovernance";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import { Proposal } from "../../../contexts/Governance/types";
 import Split from "components/Split";

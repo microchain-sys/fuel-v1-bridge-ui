@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import { Yam } from "yam-sdk/lib";
 
@@ -18,7 +18,7 @@ declare global {
   }
 }
 
-const YamProvider: React.FC = ({ children }) => {
+const YamProvider = ({ children }: { children: React.ReactNode }) => {
   const { ethereum } = useWallet();
   const [yam, setYam] = useState<any>();
 

@@ -2,7 +2,7 @@ import React, { useCallback, useState, useEffect } from "react";
 import styled from "styled-components";
 
 import { Button, Spacer } from "react-neu";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import UnlockWalletModal from "components/UnlockWalletModal";
 import WalletModal from "components/WalletModal";

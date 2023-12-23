@@ -3,7 +3,7 @@ import useFarming from "hooks/useFarming";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Box, Button, Notice, NoticeContent, Spacer } from "react-neu";
 import styled from "styled-components";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import { bnToDec } from "utils";
 import StyledNoticeIcon from "components/StyledNoticeIcon";
 

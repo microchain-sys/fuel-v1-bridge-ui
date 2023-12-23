@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Box, Card, Spacer, Button, Container } from "react-neu";
 import Page from "components/Page";
 import PageHeader from "components/PageHeader";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import { useTranslation } from 'react-i18next';
 import UnlockWalletModal from "components/UnlockWalletModal";
 import FancyValue from "components/FancyValue";

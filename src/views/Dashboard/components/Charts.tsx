@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo } from "react";
 import { Box, Button, Card, CardContent, CardTitle, Spacer, useTheme} from "react-neu";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import YamLoader from "components/YamLoader";
 import Chart from "react-apexcharts";
 import Split from "components/Split";

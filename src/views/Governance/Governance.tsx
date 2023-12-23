@@ -15,7 +15,7 @@ import YamLoader from "components/YamLoader";
 import UnlockWalletModal from "components/UnlockWalletModal";
 
 import useGovernance from "hooks/useGovernance";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import { ProposalEntry, StyledProposalContentInner } from "./components/Proposal";
 import useSDK from "hooks/useSDK";

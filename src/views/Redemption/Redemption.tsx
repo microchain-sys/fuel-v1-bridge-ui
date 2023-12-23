@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState, } from "react";
 import BigNumber from "bignumber.js";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 import { Box, Button, Card, CardContent, Container, ModalTitle, Spacer } from "react-neu";
 import Page from "components/Page";
 import PageHeader from "components/PageHeader";

@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 
 import BigNumber from "bignumber.js";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import useYam from "hooks/useYam";
 import { claimVested, currUnclaimedMigratorVesting, currUnclaimedDelegatorRewards, currVested } from "yam-sdk/utils";
@@ -10,7 +10,7 @@ import ConfirmTransactionModal from "components/ConfirmTransactionModal";
 
 import Context from "./Context";
 
-const Provider: React.FC = ({ children }) => {
+const Provider = ({ children }: { children: React.ReactNode }) => {
   const { account } = useWallet();
   const yam = useYam();
 

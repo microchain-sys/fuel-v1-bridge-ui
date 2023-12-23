@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import useYam from "hooks/useYam";
 import request from "request";
@@ -25,7 +25,7 @@ const requestHttp = (url:string) => {
   });
 };
 
-const Provider: React.FC = ({ children }) => {
+const Provider = ({ children }: { children: React.ReactNode }) => {
   const [tvl, setTVL] = useState<number>();
   const [apr, setAPR] = useState<number>();
   const yam = useYam();

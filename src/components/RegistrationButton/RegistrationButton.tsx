@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-neu';
 import useGovernance from "hooks/useGovernance";
-import { useWallet } from "use-wallet";
+import { useWallet } from 'hooks/useWallet';
 
 interface RegistrationButtonProps {
   size?: 'sm' | 'md' | 'lg';

@@ -6,7 +6,7 @@ import { getCurrentPrice } from "yam-sdk/utils";
 
 import PricesContext from "./PricesContext";
 
-const PricesProvider: React.FC = ({ children }) => {
+const PricesProvider = ({ children }: { children: React.ReactNode }) => {
   const [yamTwap, setYamTwap] = useState<number>();
   const yam = useYam();
 

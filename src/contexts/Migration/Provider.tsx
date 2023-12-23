@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import { yamv2 as yamV2Address } from "constants/tokenAddresses";
 import useApproval from "hooks/useApproval";
@@ -10,7 +10,7 @@ import ConfirmTransactionModal from "components/ConfirmTransactionModal";
 
 import Context from "./Context";
 
-const Provider: React.FC = ({ children }) => {
+const Provider = ({ children }: { children: React.ReactNode }) => {
   const { account } = useWallet();
   const yam = useYam();
   const [isMigrating, setIsMigrating] = useState(false);

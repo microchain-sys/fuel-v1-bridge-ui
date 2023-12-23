@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 
 import BigNumber from "bignumber.js";
-import { useWallet } from "use-wallet";
+import { useWallet } from "hooks/useWallet";
 
 import ConfirmTransactionModal from "components/ConfirmTransactionModal";
 import { YAMETHSLPAddress, yycrvUniLp as yycrvUniLpAddress } from "constants/tokenAddresses";
@@ -15,7 +15,7 @@ import { bnToDec } from "utils";
 
 const farmingStartTime = 1600545500 * 1000;
 
-const Provider: React.FC = ({ children }) => {
+const Provider = ({ children }: { children: React.ReactNode }) => {
   const [confirmTxModalIsOpen, setConfirmTxModalIsOpen] = useState(false);
   const [countdown, setCountdown] = useState<number>();
   const [tvl, setTVL] = useState<number>();

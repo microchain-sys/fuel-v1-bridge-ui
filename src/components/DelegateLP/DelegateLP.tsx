@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { Card, CardTitle, CardContent, Button, Input, Spacer } from "react-neu";
 import { validateAddress } from 'utils';
-import { useWallet } from 'use-wallet';
+import { useWallet } from 'hooks/useWallet';
 import { shorten } from "utils";
 import Box from 'components/BoxWithDisplay';
 import Split from "components/Split";

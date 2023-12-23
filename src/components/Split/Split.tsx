@@ -2,7 +2,7 @@ import React from "react";
 import { Spacer } from "react-neu";
 import styled from "styled-components";
 
-const Split: React.FC = ({ children }) => {
+const Split = ({ children }: { children: React.ReactNode }) => {
   const l = React.Children.toArray(children).length;
   return (
     <StyledSplit>

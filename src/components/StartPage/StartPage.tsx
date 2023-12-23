@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import StartFooter from "../StartFooter";
 
-const StartPage: React.FC = ({ children }) => (
+const StartPage = ({ children }: { children: React.ReactNode }) => (
   <StyledPage>
     <StyledMain>{children}</StyledMain>
     <StartFooter />

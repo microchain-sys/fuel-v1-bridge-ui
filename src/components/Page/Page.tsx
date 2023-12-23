@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Footer from "../Footer";
 
-const Page: React.FC = ({ children }) => (
+const Page = ({ children }: { children: React.ReactNode }) => (
   <StyledPage>
     <StyledMain>{children}</StyledMain>
     <Footer />
